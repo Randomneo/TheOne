@@ -8,4 +8,4 @@ def test_main() -> None:
     """
     test main entry point
     """
-    assert main() is None
+    assert main(extra_args=('the_one/tests/files/core1.py',)) == ''
